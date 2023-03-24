@@ -1,0 +1,18 @@
+<h1>start workout</h1>
+<button mat-raised-button color="primary">start a new workout</button>
+<br>
+<h2>Your Workouts</h2>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{myWorkouts.title}}</mat-card-title>
+    <mat-card-subtitle>{{timestamp}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p *ngFor="let exercise of onlyRelevantExercises">{{exercise}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">start</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+
