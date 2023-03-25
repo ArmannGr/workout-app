@@ -11,6 +11,8 @@ export class MainPageComponent implements OnInit {
     title: 'Pull',
     exercise: this.exercises
   }
+
+
   timestamp = new Date().getDate() + '.' + new Date().getMonth() + '.' + new Date().getFullYear();
   onlyRelevantExercises: string[] = [];
   constructor() { }
